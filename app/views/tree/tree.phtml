@@ -1,0 +1,5 @@
+<ul><?php foreach($this->nodes as $node){
+        echo $this->partial('tree/node.phtml', array(
+            'node' => $node
+        ));
+    }?></ul>

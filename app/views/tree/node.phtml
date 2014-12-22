@@ -1,0 +1,11 @@
+<?php ?>
+<li>
+    <span><?php echo $this->node->getTitle();?></span>
+    <?php if(count($this->node->getChildren())):?>
+        <ul><?php foreach($this->node->getChildren() as $child){
+            echo $this->partial('tree/node.phtml', array(
+                'node' => $child
+            ));
+        }?></ul>
+    <?php endif;?>
+</li>

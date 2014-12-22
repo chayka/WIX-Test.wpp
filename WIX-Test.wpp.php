@@ -11,7 +11,7 @@
 
 require_once 'vendor/autoload.php';
 
-if(!class_exists("Chayka\\WP\Plugin")){
+if(!class_exists("Chayka\\WP\\Plugin")){
     add_action( 'admin_notices', function () {
 ?>
     <div class="error">

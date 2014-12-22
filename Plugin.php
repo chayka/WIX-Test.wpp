@@ -11,11 +11,11 @@ class Plugin extends WP\Plugin{
     public static function init(){
         if(!static::$instance){
             static::$instance = $app = new self(__FILE__, array(
+                'tree',
                 /* chayka: init/controllers */
             ));
+            $app->dbUpdate(array('1.0'));
 	        $app->addSupport_UriProcessing();
-
-
             /* chayka: init/addSupport */
         }
     }
@@ -41,6 +41,7 @@ class Plugin extends WP\Plugin{
      * @param bool $minimize
      */
     public function registerResources($minimize = false) {
+        $this->registerStyle('wix-tree', 'dist/css/style.css');
 		/* chayka: registerResources */
     }
 

@@ -1,0 +1,22 @@
+{
+    "name": "WIX-Test",
+    "description": "MVC/OOP WP Plugin built with Chayka framework",
+    "version": "0.0.1",
+    "license": "proprietary",
+    "authors": [
+        "Boris Mossounov <borix@tut.by>"
+    ],
+    "keywords": [
+        "WordPress",
+        "Chayka"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "res/lib",
+        "test",
+        "tests"
+    ],
+    "dependencies": {}
+}

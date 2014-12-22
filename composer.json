@@ -1,0 +1,26 @@
+{
+    "name": "chayka/wix-test-wpp",
+    "description": "MVC/OOP WP Plugin built with Chayka framework",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Boris Mossounov",
+            "email": "borix@tut.by"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "app/helpers",
+            "app/models",
+            "Plugin.php"
+        ]
+    },
+    "require": {},
+    "requireDev": {},
+    "suggest": {
+        "chyaka/wp": "dev-master",
+        "chyaka/core-wpp": "dev-master"
+    }
+}

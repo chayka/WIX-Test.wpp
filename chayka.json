@@ -1,0 +1,43 @@
+{
+    "appType": "plugin",
+    "appName": "WIX-Test",
+    "appDescription": "MVC/OOP WP Plugin built with Chayka framework",
+    "appKeywords": "WordPress, Chayka",
+    "appVersion": "0.0.1",
+    "packagistVendor": "chayka",
+    "packagistPackage": "wix-test-wpp",
+    "phpNamespace": "Chayka\\WIXTest",
+    "chaykaFramework": "external",
+    "chaykaFrameworkDeps": {
+        "helpers": true,
+        "mvc": true,
+        "wp": true,
+        "core": true
+    },
+    "initDep": true,
+    "initDepPhpClass": "Chayka\\WP\\Plugin",
+    "initDepMessage": "Chayka Framework functionality is not available",
+    "support": [
+        "UriProcessing"
+    ],
+    "register": [
+        "registerActions",
+        "registerFilters",
+        "registerResources",
+        "registerRoutes"
+    ],
+    "gitInit": true,
+    "gitRemote": "github",
+    "githubUser": "chayka",
+    "gitRemoteRepo": "git@github.com:/chayka/WIX-test.git",
+    "gitPush": false,
+    "ideaInit": true,
+    "ideaProject": "WIX-Test.wpp",
+    "ideaDeploymentPath": "/WIX-Test.wpp",
+    "appAuthor": "Boris Mossounov",
+    "appAuthorEmail": "borix@tut.by",
+    "appAuthorUri": "https://github.com/chayka/",
+    "appLicense": "proprietary",
+    "ideaDeploymentServer": "WP Plugins",
+    "appClass": "Plugin"
+}
